@@ -5,7 +5,7 @@ import ContactPage from "./pages/ContactPage";
 import ErrorPage from "./pages/ErrorPage";
 import PageLayout from "./layouts/PageLayout";
 import {
-  createBrowserRouter,
+  // createBrowserRouter,
   createHashRouter,
   RouterProvider,
 } from "react-router-dom";

@@ -8,7 +8,7 @@ const TextLeftImageRight = ({ title, content, image, backgroundClass }) => {
             <p className="c-grey lh-30">{content}</p>
           </div>
           <div className="mw-50">
-            <img className="br-40 mw-300" src={image} />
+            <img className="br-40 mw-300" alt={image} src={image} />
           </div>
         </div>
       </div>

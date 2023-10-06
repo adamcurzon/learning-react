@@ -12,7 +12,7 @@ const CallToAction = ({ title, content, image, backgroundClass }) => {
           <div className="t-left mw-50">
             <h2 className="fs-48 p-m-reset">{title}</h2>
             <p className="c-grey lh-30">{content}</p>
-            <div className="flex flex-g-20">
+            <div className="flex flex-g-20 flex-mob-jc-c">
               <Link
                 to="contact"
                 onClick={() => {
@@ -50,7 +50,7 @@ const CallToAction = ({ title, content, image, backgroundClass }) => {
             </div>
           </div>
           <div className="mw-50">
-            <img className="br-40 mw-300" src={image} />
+            <img className="br-40 mw-300" alt={image} src={image} />
           </div>
         </div>
       </div>

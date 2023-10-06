@@ -1,7 +1,26 @@
+import { useState } from "react";
 import TextLeftImageRight from "../components/sections/TextLeftImageRight";
 import AnimationPage from "./AnimationPage";
+import Loader from "../components/Loader";
+import { useDispatch } from "react-redux";
+import { showSnackBar, hideSnackBar } from "../state/SnackBarReducer";
 
 const ContactPage = () => {
+  const dispatch = useDispatch();
+  const [loading, setLoading] = useState(false);
+
+  const submitContactForm = () => {
+    setLoading(true);
+    dispatch(
+      showSnackBar({
+        message: "This feature hasn't been created yet",
+        colorClass: " bg-tomato",
+      })
+    );
+    setTimeout(() => {
+      dispatch(hideSnackBar());
+    }, 3000);
+  };
   return (
     <>
       <TextLeftImageRight
@@ -18,8 +37,11 @@ const ContactPage = () => {
           className="p-lr-main p-tb-15 br-10 b b-foc"
           type="message"
         ></textarea>
-        <button className="br-10 b p-tb-10 pointer bg-main-a c-white">
-          Send Message
+        <button
+          onClick={submitContactForm}
+          className="br-10 b p-tb-10 pointer bg-main-a c-white mh-50"
+        >
+          {loading ? <Loader /> : "Send Message"}
         </button>
       </form>
     </>

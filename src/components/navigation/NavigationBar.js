@@ -1,10 +1,10 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import NavigationLink from "./NavigationLink";
 
 const NavigationBar = () => {
   return (
     <>
-      <nav className="bg-alt flex p-lr-main flex-ai-c flex-jc-sb">
+      <nav className="bg-alt flex p-lr-main flex-ai-c flex-jc-sb flex-mob-jc-c">
         <Link className="c-main td-no" to="/">
           <h1>Adam Curzon</h1>
         </Link>
