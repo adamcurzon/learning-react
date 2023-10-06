@@ -1,6 +1,7 @@
 import "./App.css";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
 import ErrorPage from "./pages/ErrorPage";
 import PageLayout from "./layouts/PageLayout";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -12,6 +13,7 @@ function App() {
       children: [
         { path: "/", element: <HomePage /> },
         { path: "/about", element: <AboutPage /> },
+        { path: "/contact", element: <ContactPage /> },
         { path: "/*", element: <ErrorPage /> },
       ],
     },

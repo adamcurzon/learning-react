@@ -4,7 +4,7 @@ import NavigationLink from "./NavigationLink";
 const NavigationBar = () => {
   return (
     <>
-      <nav className="flex p-lr-main flex-ai-c flex-jc-sb">
+      <nav className="bg-alt flex p-lr-main flex-ai-c flex-jc-sb">
         <Link className="c-main td-no" to="/">
           <h1>Adam Curzon</h1>
         </Link>

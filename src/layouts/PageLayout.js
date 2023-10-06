@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import SnackBar from "../components/SnackBar";
 import NavigationBar from "../components/navigation/NavigationBar";
 import { Outlet } from "react-router-dom";
@@ -7,6 +8,7 @@ const PageLayout = () => {
     <>
       <NavigationBar />
       <Outlet />
+      <Footer />
       <SnackBar />
     </>
   );
