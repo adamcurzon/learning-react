@@ -9,6 +9,7 @@ import {
   createHashRouter,
   RouterProvider,
 } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
   const router = createHashRouter([
@@ -25,7 +26,9 @@ function App() {
 
   return (
     <div className="App">
-      <RouterProvider router={router} />
+      <AnimatePresence mode="wait">
+        <RouterProvider router={router} />
+      </AnimatePresence>
     </div>
   );
 }

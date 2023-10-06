@@ -1,4 +1,5 @@
 import TextLeftImageRight from "../components/sections/TextLeftImageRight";
+import AnimationPage from "./AnimationPage";
 
 const ContactPage = () => {
   return (
@@ -25,4 +26,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default AnimationPage(ContactPage);

@@ -1,7 +1,8 @@
 import TextRightImageLeft from "../components/sections/TextRightImageLeft";
-import aboutImage from "../assets/about.jpg";
+import graphic2 from "../assets/graphic2.svg";
+import AnimationPage from "./AnimationPage";
 
-const HomePage = () => {
+const AboutPage = () => {
   return (
     <TextRightImageLeft
       title="About"
@@ -16,10 +17,10 @@ const HomePage = () => {
           tincidunt rutrum quam, sit amet aliquam mi congue ac.
         </>
       }
-      image={aboutImage}
+      image={graphic2}
       backgroundClass="bg-main"
     />
   );
 };
 
-export default HomePage;
+export default AnimationPage(AboutPage);

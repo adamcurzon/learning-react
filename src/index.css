@@ -3,7 +3,7 @@
   --color-main: #2ed573;
   --color-black: #222;
   --color-grey: #555;
-  --color-light-grey: #aeaeae;
+  --color-light-grey: #c8c8c8;
   --container-width: 800px;
   --color-background: #edeef0;
   --color-background-alt: #f5f6fa;
@@ -14,6 +14,11 @@
 body {
   margin: 0 auto;
   background-color: var(--color-background);
+  overflow-x: hidden;
+}
+nav {
+  z-index: 999;
+  position: relative;
 }
 
 * {
@@ -21,6 +26,38 @@ body {
   font-family: 'Gabarito', cursive;
   outline: 0;
 }
+
+/* Scoll Bar */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-light-grey);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-main);
+}
+
+/* Page Animation */
+.slide-in {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-main);
+  transform-origin: center;
+}
+
 
 /* Padding & Margins */
 

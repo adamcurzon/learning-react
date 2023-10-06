@@ -3,6 +3,7 @@ import TextRightImageLeft from "../components/sections/TextRightImageLeft";
 import CallToAction from "../components/sections/CallToAction";
 import graphic1 from "../assets/graphic.svg";
 import graphic2 from "../assets/graphic2.svg";
+import AnimationPage from "./AnimationPage";
 
 const HomePage = () => {
   return (
@@ -52,4 +53,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default AnimationPage(HomePage);
