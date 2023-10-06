@@ -4,10 +4,14 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import ErrorPage from "./pages/ErrorPage";
 import PageLayout from "./layouts/PageLayout";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  createHashRouter,
+  RouterProvider,
+} from "react-router-dom";
 
 function App() {
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       element: <PageLayout />,
       children: [
