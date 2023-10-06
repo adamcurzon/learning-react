@@ -82,3 +82,11 @@ body {
 .p-b-0 {
   bottom: 0;
 } 
+.p-b-hide {
+  bottom: -1000px;
+}
+
+/* Transitions */
+.trns-ease {
+  transition: .4s ease;
+}
