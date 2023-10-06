@@ -1,13 +1,84 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --padding-main: 20px;
+  --color-main: #0077ee;
+  --color-black: #222;
+  --color-grey: #555;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/* Main */
+body {
+  margin: 0 auto;
 }
+
+* {
+  box-sizing: border-box;
+  font-family: 'Gabarito', cursive;
+}
+
+/* Padding & Margins */
+
+.p-lr-main {
+  padding: 0px var(--padding-main);
+}
+
+.p-all-main {
+  padding: var(--padding-main);
+}
+
+/* Widths & Height */
+.w-100 {
+  width: 100%;
+}
+
+
+/* Layout */
+.flex {
+  display: flex;
+}
+
+.flex-g-20 {
+  gap: 20px;
+}
+
+.flex-jc-sb {
+  justify-content: space-between;
+}
+
+.flex-ai-c {
+  align-items: center;
+}
+
+/* Text */
+.td-no {
+  text-decoration: none;
+}
+
+.c-main {
+  color: var(--color-main);
+}
+
+.c-grey {
+  color: var(--color-grey);
+}
+
+.c-white {
+  color: white;
+}
+
+.h-black:hover {
+  color: var(--color-black);
+}
+
+/* Backgrounds */
+.bg-tomato {
+  background: tomato;
+}
+
+/* Positions */
+.p-f {
+  position: fixed;
+}
+.p-b-0 {
+  bottom: 0;
+} 
