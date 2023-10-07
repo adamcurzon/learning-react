@@ -1,10 +1,10 @@
-import TextRightImageLeft from "../components/sections/TextRightImageLeft";
+import TextImageSection from "../components/sections/TextImageSection";
 import graphic2 from "../assets/graphic2.svg";
 import AnimationPage from "./AnimationPage";
 
 const AboutPage = () => {
   return (
-    <TextRightImageLeft
+    <TextImageSection
       title="About"
       content={
         <>

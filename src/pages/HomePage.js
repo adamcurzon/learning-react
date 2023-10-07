@@ -1,9 +1,9 @@
-import TextLeftImageRight from "../components/sections/TextLeftImageRight";
-import TextRightImageLeft from "../components/sections/TextRightImageLeft";
+import TextImageSection from "../components/sections/TextImageSection";
 import CallToAction from "../components/sections/CallToAction";
 import graphic1 from "../assets/graphic.svg";
 import graphic2 from "../assets/graphic2.svg";
 import AnimationPage from "./AnimationPage";
+import ThreePointsSection from "../components/sections/ThreePointsSection";
 
 const HomePage = () => {
   return (
@@ -20,8 +20,29 @@ const HomePage = () => {
           </>
         }
       />
-      <TextRightImageLeft
+      <ThreePointsSection
+        title="My Three Points"
+        point1={{
+          title: "Commited To Development",
+          content:
+            "I develop only the best of the best websites for the best of the best people.",
+        }}
+        point2={{
+          title: "Protecting Your Website",
+          content:
+            "Your website will be protected from bad guys and cyber criminals.",
+        }}
+        point3={{
+          title: "Clean Web Designs",
+          content:
+            "Your website will be really clean and tidy with a stunning design.",
+        }}
+      />
+      <TextImageSection
         title="My second heading"
+        image={graphic2}
+        backgroundClass="bg-alt"
+        align="right"
         content={
           <>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel orci
@@ -30,13 +51,11 @@ const HomePage = () => {
             Suspendisse potenti.
           </>
         }
-        image={graphic2}
-        backgroundClass="bg-main"
       />
-      <TextLeftImageRight
+      <TextImageSection
         title="Third heading"
         image={graphic1}
-        backgroundClass="bg-alt"
+        backgroundClass="bg-main"
         content={
           <>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel orci

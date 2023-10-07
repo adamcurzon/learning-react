@@ -1,5 +1,5 @@
 import { useState } from "react";
-import TextLeftImageRight from "../components/sections/TextLeftImageRight";
+import TextImageSection from "../components/sections/TextImageSection";
 import AnimationPage from "./AnimationPage";
 import Loader from "../components/Loader";
 import { useDispatch } from "react-redux";
@@ -23,7 +23,7 @@ const ContactPage = () => {
   };
   return (
     <>
-      <TextLeftImageRight
+      <TextImageSection
         title="Contact"
         content="Contact us using the form below"
       />

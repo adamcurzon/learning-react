@@ -7,7 +7,7 @@ const CallToAction = ({ title, content, image, backgroundClass }) => {
 
   return (
     <>
-      <div className={"w-100 p-tb-main-2 " + backgroundClass}>
+      <section className={"w-100 p-tb-main-2 p-r " + backgroundClass}>
         <div className="flex flex-jc-sb mw-container center flex-ai-c flex-g-20">
           <div className="t-left mw-50">
             <h2 className="fs-48 p-m-reset">{title}</h2>
@@ -53,7 +53,7 @@ const CallToAction = ({ title, content, image, backgroundClass }) => {
             <img className="br-40 mw-300" alt={image} src={image} />
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
