@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/learning-react/static/css/main.ac72155b.css",
-    "main.js": "/learning-react/static/js/main.fcf52cd2.js",
+    "main.css": "/learning-react/static/css/main.78424b02.css",
+    "main.js": "/learning-react/static/js/main.7347235a.js",
     "static/js/787.0e6dc9a4.chunk.js": "/learning-react/static/js/787.0e6dc9a4.chunk.js",
-    "static/media/graphic2.svg": "/learning-react/static/media/graphic2.0e6adeec104a5821078b6d33848cf454.svg",
-    "static/media/graphic.svg": "/learning-react/static/media/graphic.4e4fc8d911134b1d8f3ca023ab71f1bb.svg",
+    "static/media/graphic2.svg": "/learning-react/static/media/graphic2.2762af252e2419f5c48bc4d7549513ed.svg",
+    "static/media/graphic.svg": "/learning-react/static/media/graphic.52fd24200e83074655759d71293a8b9a.svg",
     "index.html": "/learning-react/index.html",
-    "main.ac72155b.css.map": "/learning-react/static/css/main.ac72155b.css.map",
-    "main.fcf52cd2.js.map": "/learning-react/static/js/main.fcf52cd2.js.map",
+    "main.78424b02.css.map": "/learning-react/static/css/main.78424b02.css.map",
+    "main.7347235a.js.map": "/learning-react/static/js/main.7347235a.js.map",
     "787.0e6dc9a4.chunk.js.map": "/learning-react/static/js/787.0e6dc9a4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac72155b.css",
-    "static/js/main.fcf52cd2.js"
+    "static/css/main.78424b02.css",
+    "static/js/main.7347235a.js"
   ]
 }
