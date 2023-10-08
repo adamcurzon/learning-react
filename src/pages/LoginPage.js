@@ -12,7 +12,10 @@ const LoginPage = () => {
 
   const submitLoginForm = async (e) => {
     e.preventDefault();
-
+    if (loading) {
+      return;
+    }
+    console.log("click");
     dispatch(setLoading(true));
 
     setTimeout(async () => {
