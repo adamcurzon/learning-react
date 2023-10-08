@@ -9,7 +9,8 @@ const ContactPage = () => {
   const dispatch = useDispatch();
   const [loading, setLoading] = useState(false);
 
-  const submitContactForm = () => {
+  const submitContactForm = (e) => {
+    e.preventDefault();
     setLoading(true);
     dispatch(
       showSnackBar({

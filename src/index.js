@@ -5,12 +5,20 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import store from "./state/store";
 import { Provider } from "react-redux";
+import SnackBar from "./components/SnackBar";
+import { fromToken, setUser } from "./state/UserReducer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
+let response = await store.dispatch(fromToken());
+if (!response.error) {
+  store.dispatch(setUser(response.payload));
+}
 root.render(
   <React.StrictMode>
     <Provider store={store}>
       <App />
+      <SnackBar />
     </Provider>
   </React.StrictMode>
 );

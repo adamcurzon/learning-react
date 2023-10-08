@@ -15,17 +15,6 @@ const CallToAction = ({ title, content, image, backgroundClass }) => {
             <div className="flex flex-g-20 flex-mob-jc-c">
               <Link
                 to="contact"
-                onClick={() => {
-                  dispatch(
-                    showSnackBar({
-                      message: "Going to contact page",
-                      colorClass: " bg-green",
-                    })
-                  );
-                  setTimeout(() => {
-                    dispatch(hideSnackBar());
-                  }, 3000);
-                }}
                 className="td-no p-tb-10 p-lr-main br-10 b-reset pointer bg-main-a c-white"
               >
                 Contact Me

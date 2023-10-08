@@ -1,5 +1,4 @@
 import Footer from "../components/Footer";
-import SnackBar from "../components/SnackBar";
 import NavigationBar from "../components/navigation/NavigationBar";
 import { useOutlet } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
@@ -11,7 +10,6 @@ const PageLayout = () => {
       <NavigationBar />
       <AnimatePresence mode="wait">{o}</AnimatePresence>
       <Footer />
-      <SnackBar />
     </>
   );
 };
